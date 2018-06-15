@@ -3,6 +3,6 @@
 
 namespace Maths
 {
-	Matrix Transpose(Matrix matrix);
+	Matrix2x2 Transpose(Matrix2x2 matrix);
 
 }
