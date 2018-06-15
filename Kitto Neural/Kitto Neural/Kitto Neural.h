@@ -11,6 +11,8 @@ struct Matrix2x2
 
 	Matrix2x2(std::vector<double> m = { 0,0,0,0 }) {
 
+		auto i = 0;
+
 		for (auto row = 0; row < 2; row++) {
 
 			for (auto col = 0; col < 2; col++)
@@ -19,7 +21,8 @@ struct Matrix2x2
 					m_matrix[col][row] = m[col];
 				}
 				else {
-					m_matrix[col][row] = m[row + 1];
+					i++;
+					m_matrix[col][row] = m[row + i];
 				}
 			}
 		}

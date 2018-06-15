@@ -32,7 +32,19 @@ namespace Maths {
 		return tmp;
 	}
 
-	void printMatrix(Matrix2x2 m) {
+	Matrix2x2 ScalarM(Matrix2x2 m, double scale)
+	{
+		Matrix2x2 tmp = m;
+
+		for (auto row = 0; row < tmp.m_rows; row++) {
+			for (auto col = 0; col < tmp.m_columns; col++) {
+				tmp.m_matrix[col][row] *= scale;
+			}
+		}
+		return tmp;
+	}
+
+	void PrintMatrix(Matrix2x2 m) {
 
 		for (auto row = 0; row < m.m_rows; row++) {
 			for (auto col = 0; col < m.m_columns; col++) {
