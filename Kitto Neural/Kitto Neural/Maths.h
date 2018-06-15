@@ -1,8 +1,8 @@
 #pragma once
+#include "Kitto Neural.h"
 
 namespace Maths
 {
-	std::vector <double> transpose(float &matrix, int colummn, int rows);
-
+	Matrix Transpose(Matrix matrix);
 
 }

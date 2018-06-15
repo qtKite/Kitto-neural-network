@@ -24,6 +24,9 @@
     <ClInclude Include="Maths.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Kitto Neural.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

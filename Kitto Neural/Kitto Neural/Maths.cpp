@@ -2,9 +2,42 @@
 
 namespace Maths {
 
-	std::vector <double> transpose(float &matrix, int colummn, int rows) {
+	// https://en.wikipedia.org/wiki/Sigmoid_function
 
+	double sigmoid(double x) {
 
+#if 0
+		return (1 / (1 + exp(-x)));
+#else
+		return (exp(x) / (exp(x) + 1));
+#endif
+
+	}
+
+	Matrix Transpose(Matrix matrix)
+	{
+		Matrix tmp;
+
+		for (auto c = 0; c < matrix.m_columns; c++) {
+			for (auto r = 0; r < matrix.m_rows; r++) {
+				tmp.m_matrix[r][c] = matrix.m_matrix[c][r];
+			}
+		}
+
+		tmp.m_rows = matrix.m_columns;
+		tmp.m_columns = matrix.m_rows;
+
+		return tmp;
+	}
+
+	void printMatrix(Matrix m) {
+
+		for (auto row = 0; row < m.m_rows; row++) {
+			for (auto col = 0; col < m.m_columns; col++) {
+				std::cout << m.m_matrix[col][row];
+			}
+			std::cout << std::endl;
+		}
 	}
 
 }
