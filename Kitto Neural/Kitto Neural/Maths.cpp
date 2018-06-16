@@ -44,19 +44,14 @@ namespace Maths {
 
 		for (auto m1r = 0; m1r < 2; m1r++) {
 			for (auto m2c = 0; m2c < 2; m2c++) {
-				std::vector<double> b;
+
+				double b = 0;
 
 				for (auto col_count = 0; col_count < 2; col_count++) {
-					b.push_back(m1.m_matrix[col_count][m1r] * m2.m_matrix[m2c][col_count]);
+					b += (m1.m_matrix[col_count][m1r] * m2.m_matrix[m2c][col_count]);
 				}
 
-				double sum = 0;
-
-				for (auto each : b) {
-					sum += each;
-				}
-
-				a.push_back(sum);
+				a.push_back(b);
 
 			}
 		}
