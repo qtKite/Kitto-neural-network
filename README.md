@@ -6,10 +6,12 @@ The pattern will be to determine if a number in a matrix is greater or less than
 Sample:`
  | -1 | -1
  |  1 |  1
+ |
  `
 Output:`
  | 0 | 0
  | 1 | 1
+ |
 `
 # Compiling
 Open the solution "Kitto Neural.sln" with Visual Studios and compile
