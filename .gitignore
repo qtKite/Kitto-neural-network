@@ -5,3 +5,8 @@ Kitto Neural/.vs/Kitto Neural/v15/.suo
 *.ipch
 *.tlog
 *.idb
+*.log
+*.pdb
+*.ilk
+*.obj
+*.pch
