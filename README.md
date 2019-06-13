@@ -15,3 +15,7 @@ Output:`
 `
 ## Compiling
 Open the solution "Kitto Neural.sln" with Visual Studios and compile
+
+## References
+https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1  
+This link follows through the article which explains the maths behind the neural network.
